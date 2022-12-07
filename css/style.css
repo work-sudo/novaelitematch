@@ -1,0 +1,571 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Playfair Display', serif;
+  overflow-x: hidden;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+:root {
+  --golden-cl: #ceaf7a;
+  --white-cl: #fff;
+  --black-cl: #000;
+  --font-family: 'Montserrat', sans-serif;
+}
+
+.header .logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--white-cl);
+  text-decoration: none;
+}
+.mt-100 {
+  margin-top: 100px;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/Page-1-Image-1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  height: 100px;
+  align-items: center;
+}
+
+
+/* HEADER CAPTIAON  */
+
+.header-caption {
+  display: flex;
+  height: 90vh;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.header-caption h1 {
+  color: var(--golden-cl);
+  font-size: 60px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.header-caption h5 {
+  color: var(--white-cl);
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: capitalize;
+  font-family: var(--font-family);
+}
+
+/* animation  */
+
+.heading {
+  width: 37%;
+  position: relative;
+  margin: 0 auto;
+}
+
+.heading2{
+  width: 60%;
+}
+
+.heading h2 {
+  position: relative;
+  font-size: 38px;
+  padding: 0;
+  font-weight: 600;
+  display: inline-block;
+  transition: .5s;
+  transform-origin: left;
+  transform: scaleX(0);
+  color: var(--black-cl);
+  margin: 0px 0 10px;
+}
+
+.heading h2[data-scroll="in"] {
+  transform: scaleX(1);
+}
+
+.heading h2::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--black-cl);
+  transform-origin: right;
+  transition: 0.5s;
+}
+
+.heading h2[data-scroll="in"]::before {
+  transform: scaleX(0);
+  transition-delay: .5s;
+}
+
+.heading p {
+  position: relative;
+  font-size: 16px;
+  padding: 0;
+  font-weight: 500;
+  display: inline-block;
+  transition: .5s;
+  transform-origin: left;
+  transform: scaleX(1);
+  color: #222;
+  margin: 0px 0 10px;
+}
+
+.heading p[data-scroll="in"] {
+  transform: scaleX(1);
+  transition-delay: 1s;
+}
+
+.heading p::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--black-cl);
+  transform-origin: left;
+  transition: 0.5s;
+}
+.heading .banner-para::before{
+  background-color: var(--white-cl) !important;
+}
+
+.heading p[data-scroll="in"]::before {
+  transform: scaleX(0);
+  transition-delay: .5s;
+}
+
+.block-ani {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.block-ani h2 {
+  color: var(--white-cl);
+  font-size: 35px;
+  font-weight: 700;
+  display: inline-block;
+  transition: .5s;
+  transform-origin: left;
+  transform: scaleX(0);
+}
+
+.block-ani h2[data-scroll="in"] {
+  transform: scaleX(1);
+}
+
+.block-ani h2::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--white-cl);
+  transform-origin: right;
+  transition: 0.5s;
+}
+
+.block-ani h2[data-scroll="in"]::before {
+  transform: scaleX(0);
+  transition-delay: .5s;
+}
+
+.block-ani h3 {
+  color: var(--golden-cl);
+  font-size: 18px;
+  font-family: var(--font-family);
+  letter-spacing: 1px;
+  font-weight: 600;
+  display: inline-block;
+  transition: .5s;
+  transform-origin: left;
+  transform: scaleX(0);
+}
+
+
+.block-ani h3[data-scroll="in"] {
+  transform: scaleX(1);
+}
+
+.block-ani h3::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--golden-cl);
+  transform-origin: right;
+  transition: 0.5s;
+}
+
+.block-ani h3[data-scroll="in"]::before {
+  transform: scaleX(0);
+  transition-delay: .5s;
+}
+
+
+/* animation end */
+
+
+.img2 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+  width: 100%;
+
+}
+
+.section-one {
+  transition: all .5 ease-in !important;
+}
+
+.section-one figure .img2:hover{
+  transform: scale(1.1);
+}
+
+.images2 {
+  height: 420px;
+  width: 100%;
+}
+
+.section-one figure {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  cursor: pointer;
+  transition: all .5 ease-in;
+}
+
+.section-one figure:hover img{
+  transform: scale(1.1);
+  transition: all .8s linear;
+}
+.section-one figure img{
+  cursor: pointer;
+}
+.section-one figure figcaption {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: flex-start;
+}
+
+figcaption {
+  padding: 0rem 0rem 3rem 3rem;
+}
+
+.b {
+  position: relative;
+}
+
+.section-two {
+  transition: all .5 ease-in !important;
+}
+
+.section-two figure {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  cursor: pointer;
+  transition: all .5 ease-in;
+}
+
+
+
+.section-two figcaption {
+  position: absolute;
+  left: 0%;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: flex-start;
+
+}
+
+
+.section-two figure:hover img {
+  transform: scale(1.1);
+  transition: all .8s linear;
+}
+
+.section-two figure figcaption h2 {
+  color: var(--white-cl);
+  font-size: 35px;
+  font-weight: 700;
+  width: 70%;
+  text-transform: uppercase;
+  line-height: 1.55;
+}
+
+.section-two figure figcaption .heading1 {
+  width: 45%;
+  font-size: 28px;
+  margin-bottom: 1rem;
+}
+
+.section-two figure figcaption .heading2 {
+  width: 70%;
+  font-size: 31px;
+  margin-bottom: 1rem;
+}
+
+.section-two .row {
+  --bs-gutter-x: 0rem;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-.0 * var(--bs-gutter-x));
+  margin-left: calc(-.0 * var(--bs-gutter-x));
+}
+
+.section-two figure figcaption h3 {
+  color: var(--golden-cl);
+  font-size: 18px;
+  font-family: var(--font-family);
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.btn a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--white-cl);
+  font-family: var(--font-family);
+  padding-left: 5rem;
+  position: relative;
+  transition: all .4s ease-in;
+}
+
+.btn a::before {
+  content: '';
+  position: absolute;
+  left: -3rem;
+  top: .5rem;
+  margin-left: 2rem;
+  height: 3px;
+  width: 37%;
+  background-color: var(--golden-cl);
+  transition: all .4s ease-in;
+}
+
+
+.btn:hover a::before {
+  width: 30%;
+}
+
+.btn:hover a {
+  padding-left: 4.2rem;
+  color: var(--golden-cl);
+}
+
+
+.community {
+  background-color: var(--black-cl);
+  text-align: center;
+  padding: 6rem 0;
+  border-bottom: 1px solid #333;
+}
+
+.community .community-content {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.community .community-content h2 {
+  color: var(--golden-cl);
+  font-size: 35px;
+  font-weight: 800;
+}
+
+.community .community-content p {
+  color: var(--white-cl);
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 1.3rem;
+}
+
+input {
+  padding: 1.4rem;
+  border: 2px solid var(--white-cl);
+  font-size: 18px;
+  font-weight: 600;
+  font-family: var(--font-family);
+  width: 40%;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--white-cl);
+  margin-top: 2.3rem;
+}
+
+::placeholder {
+  color: var(--white-cl);
+}
+
+.pagination {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 2.5rem;
+  color: var(--white-cl);
+}
+
+.pagination h5 {
+  font-family: var(--font-family);
+  font-size: 18px;
+  color: #333;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.pagination h4 {
+  font-family: var(--font-family);
+  font-size: 18px;
+  color: var(--white-cl);
+  font-weight: 600;
+  letter-spacing: 5px;
+}
+
+.pagination .active {
+  color: var(--golden-cl);
+}
+
+footer {
+  background-color: var(--black-cl);
+}
+
+footer .left-side a,
+footer .right-side a {
+  text-decoration: none;
+  color: var(--white-cl);
+  font-size: 15px;
+  font-weight: 600;
+  font-family: var(--font-family);
+}
+
+footer .right-side {
+  display: flex;
+  gap: 20px;
+}
+
+footer .left-side span {
+  font-size: 1.2rem;
+  margin-right: 8px;
+  font-weight: 700;
+}
+
+.row1 {
+  border-bottom: 1px solid #333;
+  padding-bottom: 1rem;
+}
+
+footer a:hover {
+  color: var(--golden-cl);
+}
+
+.row2 {
+  padding: 2rem 1.4rem 2rem 1.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+.how_work .content h4{
+  font-size: 18px;
+  font-weight: 500;
+  padding-left: 4rem;
+  color: #333;
+  font-family: var(--font-family);
+}
+
+.section-banner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/Page-2-Image-5.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+  width: 100%;
+  margin-top: 5rem;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all .5s ease-out;
+  transform: scale(1);
+}
+
+.section-banner:hover{
+  transform: scale(1.1);
+  overflow: hidden;
+}
+
+.section-banner .content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 15px;
+  height: 50vh;
+  width: 100%;
+}
+
+.section-banner .content p{
+  color: var(--white-cl);
+  font-size: 18px;
+  width: 60%;
+  font-weight: 500;
+  font-family: var(--font-family);
+}

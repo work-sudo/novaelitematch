@@ -1,0 +1,265 @@
+@media (max-width: 1400px) {
+  .images2 {
+    height: 361px;
+    width: 100%;
+  }
+
+  .heading {
+    width: 50%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .section-two figure figcaption .heading1 {
+    width: 65%;
+
+  }
+
+  .images2 {
+    height: 301px;
+    width: 100%;
+  }
+
+  .section-two figure figcaption .heading2 {
+    width: 95%;
+  }
+
+  input {
+    width: 60%;
+  }
+
+  .pagination {
+    width: 60%;
+  }
+}
+
+@media (max-width: 991px) {
+
+  .heading {
+    width: 80%;
+  }
+  .header-caption h1{
+    font-size: 45px;
+  }
+
+  .row2 {
+    padding: 1.5rem 1rem 1rem 1rem;
+  }
+  .section-banner .content p{
+    width: 80%;
+  }
+  .community .community-content{
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .section-two figure figcaption .heading1 {
+    width: 85%;
+
+  }
+  .heading2{
+    width: 100%;
+  }
+
+  .row1 {
+    text-align: center;
+  }
+
+  .row1 .right-side {
+    justify-content: center;
+  }
+  .how_work .content h4{
+    padding-left: 0;
+  }
+}
+
+
+@media (max-width: 700px) {
+  .section-two figure figcaption .heading1 {
+    width: 100%;
+    font-size: 20px;
+    margin-bottom: .5rem;
+  }
+
+  .section-two figcaption {
+    padding: 0 0 2rem 2rem;
+  }
+
+  .section-two figure figcaption .heading2 {
+    font-size: 26px;
+  }
+
+  .row1 {
+    text-align: center;
+  }
+
+  .row1 .right-side {
+    justify-content: center;
+  }
+
+  .row2 .col-01 {
+    width: 300px;
+  }
+
+
+}
+
+
+
+@media (max-width: 600px) {
+
+  .row2 .col-01 {
+    width: 100%;
+  }
+
+
+  .row2 {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .heading {
+    width: 90%;
+  }
+  .section-banner .content p{
+    width: 95%;
+  }
+
+  .header-caption h1 {
+    font-size: 53px;
+  }
+  .how_work .content h4{
+    padding-left: 3rem;
+  }
+  .header-caption h5 {
+    font-size: 21px;
+  }
+  .community .community-content h2{
+    font-size: 26px;
+  }
+
+  .header-caption h1{
+    font-size: 32px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .section-two figure figcaption .heading2 {
+    width: 100%;
+  }
+
+  .section-two figure figcaption .heading2 {
+    font-size: 24px;
+  }
+
+  nav .logo img {
+    width: 234px;
+  }
+
+  header nav {
+    padding: 0 0rem 0 1rem;
+  }
+
+  .menu-btn {
+    left: 2rem;
+  }
+
+  .scroll-text h5::before {
+    width: 20%;
+  }
+
+  .btn a {
+    font-size: 15px;
+  }
+
+  .scroll-menu {
+    padding-left: 0;
+  }
+
+  .scroll-menu .cancel-btn {
+    left: 2rem;
+    top: 1.2rem;
+  }
+
+  .scroll-menu .nav_items li a {
+    font-size: 25px;
+  }
+
+  .scroll-menu .nav_items li h5 {
+    font-size: 1.05rem;
+  }
+
+  .logo-scroll img {
+    width: 220px;
+    padding: 40px 0;
+  }
+}
+
+@media (max-width: 409px) {
+
+  .section-two figure figcaption .heading2 {
+    font-size: 20px;
+  }
+
+  .section-two figcaption {
+    padding: 0 0 1rem 1rem;
+  }
+
+  .header-caption h1 {
+    font-size: 40px;
+  }
+
+  .header-caption h5 {
+    font-size: 16px;
+  }
+
+  .pagination h5 {
+    font-size: 15px;
+  }
+
+  .heading p {
+    line-height: 1.5;
+  }
+
+  nav .logo img {
+    width: 190px;
+  }
+
+  header .menu-btn .line {
+    width: 27px;
+    height: 2px;
+  }
+
+  .menu-btn {
+    top: 2.7rem;
+  }
+
+  .scroll-menu .cancel-btn {
+    left: 2rem;
+    top: 1.5rem;
+    font-size: 2rem;
+  }
+
+  .logo-scroll img {
+    width: 200px;
+  }
+
+  footer img {
+    width: 180px;
+  }
+
+  .div-1 {
+    order: 3;
+  }
+
+  .div-1 {
+    order: 0;
+  }
+
+  .div-1 {
+    order: 2;
+  }
+}
